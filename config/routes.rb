@@ -5,6 +5,7 @@ SampleApp::Application.routes.draw do
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
   get  'signup' => 'users#new'
+  resources :users
   
   #get "pages/help"
   # The priority is based upon order of creation: first created -> highest priority.
