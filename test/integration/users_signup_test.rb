@@ -26,6 +26,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
 				}
 		end
 		assert_template 'users/new'
+		# assert is_logged_in?
 	end
  
  
