@@ -11,7 +11,8 @@ class SessionsController < ApplicationController
 		log_in user
 		#interogate the rmember_me params
 		params[:session][:remember_me] == '1' ? remember(user) : forget(user)
-		redirect_to user
+		#redirect_to user
+		redirect_back_or user
 	else
 		#create an error message
 		@title = "Log in"
